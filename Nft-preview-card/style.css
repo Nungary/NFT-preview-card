@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Outfit, sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);
+}
+.nft-card {
+    position: relative;
+    background-color: hsl(216, 50%, 16%);
+    width: 400px;
+    padding: 25px 25px;
+    border-radius: 2.5%;
+    margin: 50px auto;
+    font-weight: 300;
+    line-height: 25px;
+}
+.nft-card .text h3{
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+    font-size: 21px;
+    line-height: 27px;
+    margin: 20px 0 10px 0;
+}
+.nft-card .text h3:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.nft-card-image {
+    width: 100%;
+    position: relative;
+    border-radius: 2.5%;
+}
+.nft-card .text p {
+    font-weight: 300;
+    color: hsl(215, 51%, 70%); 
+}
+.view-image {
+    position: absolute;
+    background-color: hsl(178, 100%, 50%);
+    width: 350px;
+    height: 350px;
+    top: 25px;
+    left: 25px;
+    opacity:0;
+    border-radius: 2.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.view-image:hover {
+    opacity: 0.7;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.view-image img {
+    justify-content: center;
+    width: 100%;
+    display: block;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    margin: 15px;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    padding-bottom: 20px;
+}
+.icon-price, .clock {
+    display: flex;
+    align-items: center;
+}
+.text-price {
+color: hsl(178, 100%, 50%);
+}
+.icon-price img, .clock img {
+    margin-right: 7px;
+}
+.user-creator {
+    display: flex;
+    align-items: center;
+}
+.avatar-image {
+    width: 40px;
+    margin-right: 20px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 100%;
+}
+.user-creator span {
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+.user-creator span:hover {
+    color: hsl(178, 100%, 50%);
+}
